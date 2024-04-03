@@ -12,8 +12,8 @@ my_field_2
 my_datetime_field
 ```
 
-Create a new text file and list out the database field names one per line
-The choose EF Parser command to format a EF C# Class with the appropriate attributes.
+Create a new text file and list out the database field names one per line.
+Then choose the `EF Parser` command to format an EF C# Class with appropriate attributes.
 
 ```csharp
 [Table("")]
