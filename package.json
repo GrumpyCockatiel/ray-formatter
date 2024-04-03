@@ -1,0 +1,26 @@
+{
+	"name": "ray-formatter",
+	"displayName": "Ray Formatter",
+	"description": "Formats columnar field names into an EF C# Class",
+	"version": "0.0.1",
+	"publisher": "www.raydreams.com",
+	"icon":"./images/tagds-logo-128.png",
+	"homepage": "https:www.raydreams.com",
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.efParser",
+				"title": "EF Parser"
+			}
+		]
+	},
+	"scripts": {},
+	"devDependencies": {
+		"@types/vscode": "^1.87.0"
+	}
+}
