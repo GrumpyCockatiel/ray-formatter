@@ -38,6 +38,8 @@ public string my_datetime_field { get; set; }
 }
 ```
 
+C# Template - Formats a simple C# Class file.
+
 ## Documentation
 
 [VSCode Extension Documentation](https://code.visualstudio.com/api)

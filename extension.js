@@ -13,10 +13,8 @@ function activate(context) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('extension.efParser', () => {
-		// The code you place here will be executed every time your command is executed
+	let dispose1 = vscode.commands.registerCommand('extension.efParser', () => {
 
-		// Display a message box to the user
 		//vscode.window.showInformationMessage('Hello World!');
 
 		const editor = vscode.window.activeTextEditor;
@@ -32,8 +30,21 @@ function activate(context) {
 
 			body = classTemplate.replace('$PROPERTIES$', body );
 
-            // DO SOMETHING WITH `documentText`
 			insertText(body);
+        }
+	});
+
+	// 
+	let dispose2 = vscode.commands.registerCommand('extension.cSharpTemplate', () => {
+		
+		const editor = vscode.window.activeTextEditor;
+
+        if (editor) {
+            let document = editor.document;
+
+            // Get the document text
+            const documentText = document.getText();
+			insertText(cSharpClassTemplate);
         }
 	});
 
@@ -110,3 +121,39 @@ module.exports = {
 	activate,
 	deactivate
 }
+
+const cSharpClassTemplate = `
+/// <summary></summary>
+public class MyClass
+{
+    #region [ Fields ]
+
+    #endregion [ Fields ]
+
+    #region [ Constructors ]
+
+    /// <summary></summary>
+    public MyClass()
+    {
+    }
+
+    #endregion [ Constructors ]
+
+    #region [ Properties ]
+
+    /// <summary></summary>
+    public string SomeProperty { get; set; }
+
+    #endregion [ Properties ]
+
+    #region [ Methods ]
+
+    /// <summary></summary>
+    public void SomeMethod
+    {
+        throw NotImplementedException();
+    }
+
+    #endregion [ Methods ]
+
+}`

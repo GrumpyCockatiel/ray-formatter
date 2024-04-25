@@ -16,6 +16,10 @@
 			{
 				"command": "extension.efParser",
 				"title": "EF Parser"
+			},
+			{
+				"command": "extension.cSharpTemplate",
+				"title": "C# Template"
 			}
 		]
 	},
