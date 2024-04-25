@@ -2,7 +2,7 @@
 	"name": "ray-formatter",
 	"displayName": "Ray Formatter",
 	"description": "Formats columnar field names into an EF C# Class",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "www.raydreams.com",
 	"icon":"./images/tagds-logo-128.png",
 	"homepage": "https:www.raydreams.com",
