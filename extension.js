@@ -149,11 +149,10 @@ public class MyClass
     #region [ Methods ]
 
     /// <summary></summary>
-    public void SomeMethod
+    public void SomeMethod()
     {
         throw NotImplementedException();
     }
 
     #endregion [ Methods ]
-
 }`
